@@ -15,13 +15,23 @@ const sampleDataPath = 'sample-data';
 const yelpPath = 'yelp';
 const businessDataPath = 'businessData.json';
 
-async function fetcher(postalCode, ambience, categories){
-    const content = await fs.readFile(path.join(__dirname,
+async function fetcher(postalCode, aura){
+    const contents = await fs.readFile(path.join(__dirname,
         backPath, sampleDataPath, yelpPath, businessDataPath), 'utf8');
-    console.log(content);
+   
+    // parse contents (gives you an array)
+    const data = JSON.parse(contents);
+    // iterate over the array looking for obj.postal_code === postalCode
+    // Array.find(obj => )
+    const obj = data.find(key => {
+        if(key.postal_code === postalCode){
+            return key;
+        }
+    });
+    console.log(obj);
 }
 
 
-fetcher('x', 'y', 'z');
+fetcher('89123');
 
 
