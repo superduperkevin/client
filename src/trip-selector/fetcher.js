@@ -23,7 +23,7 @@ async function fetcher(postalCode, aura){
     const data = JSON.parse(contents);
     // iterate over the array looking for obj.postal_code === postalCode
     // Array.find(obj => )
-    const obj = data.find(key => {
+    const obj = data.filter(key => {
         if(key.postal_code === postalCode){
             return key;
         }
