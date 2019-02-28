@@ -28,7 +28,13 @@ async function fetcher(postalCode, aura){
             return key;
         }
     });
-    console.log(obj);
+    // if no object is found, return error
+    if(obj.length !== 0){
+        console.log(obj);
+    }
+    else{
+        console.log('NO RESULTS FOUND!');
+    }
 }
 
 
