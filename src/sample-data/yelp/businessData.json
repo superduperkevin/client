@@ -263,5 +263,27 @@
       "Saturday": "11:0-0:0",
       "Sunday": "11:0-21:0"
     }
+  },
+  {
+    "business_id": "IeJWawvw4oAb9EjAP-W5hA",
+    "name": "MutarFuchcier's Bar",
+    "address": "8520 Maryland Pkwy",
+    "city": "Las Vegas",
+    "state": "NV",
+    "postal_code": "89123",
+    "latitude": 36.034795,
+    "longitude": -115.1360542,
+    "stars": 4.5,
+    "review_count": 17,
+    "is_open": 0,
+    "attributes": {
+      "OutdoorSeating": "True",
+      "BusinessAcceptsCreditCards": "True",
+      "RestaurantsPriceRange2": "1",
+      "BusinessParking": "{'garage': False, 'street': False, 'validated': False, 'lot': True, 'valet': False}",
+      "WiFi": "'free'"
+    },
+    "categories": "Coffee & Tea, Food",
+    "hours": null
   }
 ]
