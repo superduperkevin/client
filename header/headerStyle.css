@@ -6,7 +6,7 @@
 }
 
 body {
-  background-image: url(./trinitybackgroundwhite.png);
+  background-image: url(../pictures/trinitybackgroundwhite.png);
   margin: 0;
 }
 
@@ -50,7 +50,7 @@ nav ul li:hover {
   height: 4rem;
 }
 
-header>* {
+header > * {
   display: inline-block;
 }
 
