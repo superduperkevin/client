@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Comfortaa");
 
+@media only screen and (min-width: 0px) and (max-width: 590px) {
+  #navoptions {
+    display: none;
+  }
+}
+
 :root {
   font-size: 16px;
   font-family: Comfortaa;
@@ -10,10 +16,11 @@ body {
   margin: 0;
 }
 
-header img {
+#headerLogo {
   height: 8rem;
+  float: left;
   margin-top: -2.2rem;
-  margin-left: 1rem;
+  /* padding-bottom: 20px; */
 }
 
 header {
@@ -28,9 +35,16 @@ header {
   margin: 0;
 }
 
+#navoptions {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
 ul {
+  display: flex;
   color: rgb(255, 255, 255);
-  display: block;
+  display: inline-block;
   font-family: Comfortaa, cursive;
   font-size: 16px;
   height: 40px;
@@ -52,6 +66,7 @@ nav ul li:hover {
 
 header>* {
   display: inline-block;
+  flex-wrap: wrap;
 }
 
 nav {
