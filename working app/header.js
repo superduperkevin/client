@@ -1,6 +1,5 @@
 // Get the container element
-const btnsContainer = document.getElementById('header');
-
+const btnsContainer = document.getElementById('navoptions');
 // Get all buttons with class="btn" inside the container
 const btns = btnsContainer.getElementsByClassName('btn');
 
